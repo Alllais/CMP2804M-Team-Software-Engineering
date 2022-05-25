@@ -1,8 +1,4 @@
 from operator import index
-from matplotlib.axis import XAxis, YAxis
-import numpy as np
-import matplotlib.pyplot as plt
-import pandas as pd
 import pandas_datareader as web
 import datetime as dt
 import tensorflow as tf
@@ -153,45 +149,3 @@ while True:
         break
 
 window.close()
-
-
-
-#print(stock_prediction_model.predict(test_data))
-#print("-------------------------------------------------------")
-#print(stock_prediction_model.predict("57", "53", "53", "56", "102323", "153"))
-#actual_prices = test_data['High'].values
-#price_prediction = []
-
-#for a in test_data:
-#price_prediction.append(stock_prediction_model.predict(test_data.iloc[1]))
-
-
-#print("This is a price prediction : " , price_prediction[0:3])
-
-#for a in range (539):
-#   price_prediction.append(test_data)
-
-#price_prediction.append(stock_prediction_model.predict(test_data(index=list(range(0,539,1)))))
-
-#print("This is the shape ", price_prediction[5])
-
-#plt.plot(actual_prices, color="black", label = f"Actual {company} Price")
-#plt.plot(price_prediction, color = "green", label = f"Predicted {company} Price")
-#plt.title(f"{company} Share Price") 
-#plt.xlabel("Time")
-#plt.ylabel(f"{company} Share Price")
-#plt.legend()
-#plt.show()
-
-#for a in range(len (price_prediction)):
-#    print("This is the predicted price: ", price_prediction[a], " and this is the actual price: ", actual_prices[a])
-
-"""
-plt.ylabel("Loss")
-plt.xlabel("Epochs")
-pd.DataFrame(history.history).plot()
-plt.show()
-"""
-
-
-#print(stock_prediction_model.predict(x_test, y_test))
